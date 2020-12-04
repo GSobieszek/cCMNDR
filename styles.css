@@ -1,0 +1,116 @@
+.bgcolor{
+    background-color: #9FA6A5;
+}
+.cardhighlight td:hover{
+    color: #fff;
+}
+.leftside, .rightside{
+    height:100%;
+    width:100%; 
+}
+.site{
+    display:grid;
+    grid-template-columns: 11% 80% 9%;
+    grid-template-rows: 1% auto 0.4% 1fr 1%;
+    grid-template-areas: 
+    "blank1 blank2 blank3"
+    "logo title profile"
+    "blank4 blank5 blank6"
+    "sidebar content content"
+    "sidebar footer footer";
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: #34403F;
+    text-align: left; 
+}
+.title{
+    grid-area: title;
+    background-color: #34403F
+}
+.title:hover a{
+    text-shadow: 0 0 5px #fff;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+.content{
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 0.5% 15% 0.5% 58% 16%;
+    grid-template-areas:
+    "blank7 articles blank8 cards videos"
+}
+.icon{
+    grid-area: logo;
+    background-color: #182625;
+    text-align: center; 
+}
+.profile{
+    background-color: #000D09;
+    text-align: center; 
+}
+.whiteline{
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+}
+.sidebar:hover li a{
+    text-shadow: 0 0 1px #0d1a3a;  
+}
+.sidebar li a{
+    display: block;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #fff;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+.articles{
+    grid-area: articles;
+    background-color: #9FA6A5;
+    word-wrap: normal;
+}
+.cards{
+    grid-area: cards;
+    background-color: #9FA6A5;
+    word-wrap: normal;
+}
+.videos{
+    grid-area: videos;
+    background-color: #9FA6A5;
+    word-wrap: normal;
+}
+.blank1{
+    grid-area: blank1;
+    background-color: #182625;
+}
+.blank2{
+    grid-area: blank2;
+    background-color: #34403F;
+}
+.blank3{
+    grid-area: blank3;
+    background-color: #000D09;
+}
+.blank4{
+    grid-area: blank4;
+    background-color: #34403F;
+}
+.blank5{
+    grid-area: blank5;
+    background-color: #9FA6A5;
+}
+.blank6{
+    grid-area: blank6;
+    background-color: #9FA6A5 ;
+}
+.blank7{
+    grid-area: blank7;
+    background-color: #9FA6A5;
+}
+.blank8{
+    grid-area: blank8;
+    background-color: #9FA6A5;
+}
